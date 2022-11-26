@@ -54,11 +54,11 @@ def readLangs(lang1, lang2, reverse=False):
 
     # Read the file and split into lines
 #     lines = open('spa_eng/%s-%s.txt' % (lang1, lang2), encoding='utf-8').\
-    #lines = open('/home/josecobos/Documentos/Escuela/IA_Parte2/Modulo_3/data/%s-%s.txt' % (lang1, lang2), encoding='utf-8').read().strip().split('\n')
-    lines = open('/home/josecobos/Documentos/Escuela/IA_Parte2/Modulo_3/data/t.txt', encoding='utf-8').read().strip().split('\n')
+    lines = open('/home/josecobos/Documentos/Escuela/IA_Parte2/Modulo_3/data/%s-%s.txt' % (lang1, lang2), encoding='utf-8').read().strip().split('\n')
+    #lines = open('/home/josecobos/Documentos/Escuela/IA_Parte2/Modulo_3/data/fra.txt', encoding='utf-8')
+    
     # Split every line into pairs and normalize
     pairs = [[normalizeString(s) for s in l.split('\t')] for l in lines]
-
     # Reverse pairs, make Lang instances
     if reverse:
         pairs = [list(reversed(p)) for p in pairs]
