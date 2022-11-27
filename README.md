@@ -9,6 +9,9 @@ de los modulos que se vieron durante el desarrollo de la materia
 Esta divida en carpetas para facil a cada uno de los profesores 
 
 Modulo 1: Big Data
+
 Modulo 2: Deep Learning
+
 Modulo 3: NLP
+
 Moudlo 5: Estadistics
